@@ -1,0 +1,20 @@
+{
+    "name": "jihel/mailexpertise-api",
+    "description": "A SF bundle to handle mailexpertise api",
+    "authors": [
+        {
+            "name": "Joseph Lemoine",
+            "email": "lemoine.joseph@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "symfony/symfony": ">=2.1",
+        "guzzlehttp/guzzle": ">=6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jihel\\Plugin\\MailExpertise\\": "src"
+        }
+    }
+}

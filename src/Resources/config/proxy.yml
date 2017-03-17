@@ -1,0 +1,12 @@
+parameters:
+    jihel.plugin.mail_expertise.proxy.api.class: Jihel\Plugin\MailExpertiseBundle\Proxy\ApiProxy
+
+services:
+    jihel.plugin.mail_expertise.proxy.api:
+        class: %jihel.plugin.mail_expertise.proxy.api.class%
+        arguments:
+            - %jihel.plugin.mail_expertise.apiKey%
+            - %jihel.plugin.mail_expertise.token%
+            - %jihel.plugin.mail_expertise.timeout%
+            - %jihel.plugin.mail_expertise.baseUrl%
+            - %jihel.plugin.mail_expertise.referer%
