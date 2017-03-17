@@ -12,13 +12,13 @@ Add plugin to your composer.json require:
 
     {
         "require": {
-            "jihel/mail-expertise-bundle": "dev-master",
+            "jihel/mail-xpertise-bundle": "dev-master",
         }
     }
 
 or
 
-    php composer.phar require jihel/mail-expertise-bundle:dev-master
+    php composer.phar require jihel/mail-xpertise-bundle:dev-master
 
 Add bundle to your AppKernel.php
 
