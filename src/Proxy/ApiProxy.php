@@ -2,7 +2,7 @@
 /**
  * @package Plugin
  */
-namespace Jihel\Plugin\MailExpertiseBundle\Proxy;
+namespace Jihel\Plugin\MailXpertiseBundle\Proxy;
 
 use GuzzleHttp\Client;
 

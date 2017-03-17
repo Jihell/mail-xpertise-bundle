@@ -2,17 +2,17 @@
 /**
  * @package Plugin
  */
-namespace Jihel\Plugin\MailExpertiseBundle;
+namespace Jihel\Plugin\MailXpertiseBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
- * Class JihelPluginMailExpertiseBundle
+ * Class JihelPluginMailXpertiseBundle
  *
  * @author Joseph LEMOINE <lemoine.joseph@gmail.com>
  * @link http://www.joseph-lemoine.fr
  */
-class JihelPluginMailExpertiseBundle extends Bundle
+class JihelPluginMailXpertiseBundle extends Bundle
 {
 
 }

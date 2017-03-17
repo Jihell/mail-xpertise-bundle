@@ -1,4 +1,4 @@
-Mailexpertise Api
+MailXpertise Api
 =================
 
 A Symfony bundle to handle mail expertise api.
@@ -12,13 +12,13 @@ Add plugin to your composer.json require:
 
     {
         "require": {
-            "jihel/mailexpertise": "dev-master",
+            "jihel/mail-expertise-bundle": "dev-master",
         }
     }
 
 or
 
-    php composer.phar require jihel/mailexpertise:dev-master
+    php composer.phar require jihel/mail-expertise-bundle:dev-master
 
 Add bundle to your AppKernel.php
 
@@ -26,7 +26,7 @@ Add bundle to your AppKernel.php
     {
         $bundles = array(
             ...
-            new Jihel\Plugin\MailExpertiseBundle\JihelPluginMailExpertise(),
+            new Jihel\Plugin\MailXpertiseBundle\JihelPluginMailXpertise(),
         );
     }
 
@@ -37,7 +37,7 @@ Add bundle to your AppKernel.php
 The default configuration file and explanations can be found [here](doc/config.md)
 
 
-    jihel_plugin_mail_expertise:
+    jihel_plugin_mail_xpertise:
         apiKey: your_api_key
         token: your_api_token
         timeout: 3
@@ -46,13 +46,13 @@ The default configuration file and explanations can be found [here](doc/config.m
 3- Usage
 --------
 
-Get the proxy service **jihel.plugin.mail_expertise.proxy.api**:
+Get the proxy service **jihel.plugin.mail_xpertise.proxy.api**:
 
 - From a controller
 
 
-    /** @var \Jihel\Plugin\MailExpertiseBundle\Proxy\ApiProxy $mailExpertiseProxy */
-    $mailExpertiseProxy = $this->get('jihel.plugin.mail_expertise.proxy.api');
+    /** @var \Jihel\Plugin\MailXpertiseBundle\Proxy\ApiProxy $MailXpertiseProxy */
+    $MailXpertiseProxy = $this->get('jihel.plugin.mail_xpertise.proxy.api');
 
 - From a service
 
@@ -60,7 +60,7 @@ Get the proxy service **jihel.plugin.mail_expertise.proxy.api**:
     service:
         my.super.service:
             class: %my.super.service.class%
-            arguments: { '@jihel.plugin.mail_expertise.proxy.api' }
+            arguments: { '@jihel.plugin.mail_xpertise.proxy.api' }
 
 The class provite one methods that will return a Guzzle Client object
 
@@ -75,9 +75,9 @@ The class provite one methods that will return a Guzzle Client object
 
 Example:
 
-    /** @var \Jihel\Plugin\MailExpertiseBundle\Proxy\ApiProxy $mailExpertiseProxy */
-    $mailExpertiseProxy = $this->get('jihel.plugin.mail_expertise.proxy.api');
-    $client = $mailExpertiseProxy->getClient();
+    /** @var \Jihel\Plugin\MailXpertiseBundle\Proxy\ApiProxy $MailXpertiseProxy */
+    $MailXpertiseProxy = $this->get('jihel.plugin.mail_xpertise.proxy.api');
+    $client = $MailXpertiseProxy->getClient();
     $response = $client->get('/api/lists/info');
 
 

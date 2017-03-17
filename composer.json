@@ -1,6 +1,6 @@
 {
-    "name": "jihel/mail-expertise-bundle",
-    "description": "A symfony bundle to handle mailexpertise api",
+    "name": "jihel/mail-xpertise-bundle",
+    "description": "A symfony bundle to handle mailxpertise api",
     "authors": [
         {
             "name": "Joseph Lemoine",
@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Jihel\\Plugin\\MailExpertiseBundle\\": "src"
+            "Jihel\\Plugin\\MailXpertiseBundle\\": "src"
         }
     }
 }

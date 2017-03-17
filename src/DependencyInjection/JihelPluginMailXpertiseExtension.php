@@ -2,7 +2,7 @@
 /**
  * @package Plugin
  */
-namespace Jihel\Plugin\MailExpertiseBundle\DependencyInjection;
+namespace Jihel\Plugin\MailXpertiseBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -10,12 +10,12 @@ use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\Loader;
 
 /**
- * Class JihelPluginMailExpertiseExtension
+ * Class JihelPluginMailXpertiseExtension
  *
  * @author Joseph LEMOINE <lemoine.joseph@gmail.com>
  * @link http://www.joseph-lemoine.fr
  */
-class JihelPluginMailExpertiseExtension extends Extension
+class JihelPluginMailXpertiseExtension extends Extension
 {
     /**
      * {@inheritDoc}
@@ -49,7 +49,7 @@ class JihelPluginMailExpertiseExtension extends Extension
                 }
 
                 $container->setParameter(
-                    sprintf('jihel.plugin.mail_expertise.%s', $prefix.$key),
+                    sprintf('jihel.plugin.mail_xpertise.%s', $prefix.$key),
                     $value
                 );
             }

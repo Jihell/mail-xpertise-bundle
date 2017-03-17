@@ -2,7 +2,7 @@
 /**
  * @package Plugin
  */
-namespace Jihel\Plugin\MailExpertiseBundle\Proxy\Bean;
+namespace Jihel\Plugin\MailXpertiseBundle\Proxy\Bean;
 
 /**
  * Class ApiProxyBean
