@@ -1,12 +1,14 @@
 {
-    "name": "jihel/mailexpertise-api",
-    "description": "A SF bundle to handle mailexpertise api",
+    "name": "jihel/mail-expertise",
+    "description": "A symfony bundle to handle mailexpertise api",
     "authors": [
         {
             "name": "Joseph Lemoine",
             "email": "lemoine.joseph@gmail.com"
         }
     ],
+    "type": "symfony-bundle",
+    "license": "MIT",
     "require": {
         "php": ">=5.4",
         "symfony/symfony": ">=2.1",
