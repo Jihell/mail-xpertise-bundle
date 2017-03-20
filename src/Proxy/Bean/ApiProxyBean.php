@@ -4,6 +4,8 @@
  */
 namespace Jihel\Plugin\MailXpertiseBundle\Proxy\Bean;
 
+use GuzzleHttp\Client;
+
 /**
  * Class ApiProxyBean
  *
@@ -73,6 +75,7 @@ abstract class ApiProxyBean
             'headers' => [
                 'Application-key' => $this->apiKey ,
                 'Token-api' => $this->token,
+                'Referer' => $this->referer,
                 'Type-Response' => 'json',
             ]
         ];
